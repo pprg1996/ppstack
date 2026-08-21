@@ -1,0 +1,193 @@
+{
+  "schemaVersion": 1,
+  "upstreamPath": "pstack/skills",
+  "skills": {
+    "architect": {
+      "status": "excluded",
+      "reason": "Project-level architecture orchestration overlaps Matt's codebase-design and planning skills."
+    },
+    "arena": {
+      "status": "excluded",
+      "reason": "Multi-candidate orchestration depends on worker features and overlaps Matt's prototype and review workflows."
+    },
+    "automate-me": {
+      "status": "excluded",
+      "reason": "Depends on harness-specific history and skill-generation commands; Matt already provides setup and agent-writing workflows."
+    },
+    "blast-radius": {
+      "status": "adapted",
+      "localName": "blast-radius",
+      "reason": "Distinct tactical safety check; parallel review now degrades to sequential inspection."
+    },
+    "bro": {
+      "status": "excluded",
+      "reason": "A one-line style instruction does not justify a standalone installed skill."
+    },
+    "create-verification-skill": {
+      "status": "adapted",
+      "localName": "create-verification-skill",
+      "reason": "Useful project-specific verification generator with harness paths replaced by capability-based discovery."
+    },
+    "figure-it-out": {
+      "status": "excluded",
+      "reason": "Top-level execution orchestrator overlaps Matt's implement and wayfinder workflows."
+    },
+    "how": {
+      "status": "adapted",
+      "localName": "how",
+      "reason": "Adds focused codebase explanation; hard-coded worker types and model choices were removed."
+    },
+    "interrogate": {
+      "status": "excluded",
+      "reason": "Adversarial multi-model review overlaps Matt's code-review and grilling skills."
+    },
+    "maintain-verification-skill": {
+      "status": "adapted",
+      "localName": "maintain-verification-skill",
+      "reason": "Keeps generated verification skills honest without assuming a harness directory or worker API."
+    },
+    "no-comments": {
+      "status": "adapted",
+      "localName": "no-comments",
+      "reason": "The comment audit is useful; the Cursor-specific reviewer agent was replaced with a portable review contract."
+    },
+    "poteto-mode": {
+      "status": "excluded",
+      "reason": "Personal style mode and global orchestrator conflict with ppstack's harness-neutral companion role."
+    },
+    "principle-boundary-discipline": {
+      "status": "excluded",
+      "reason": "Useful guidance already covered by Matt's codebase-design and domain-modeling skills."
+    },
+    "principle-build-the-lever": {
+      "status": "excluded",
+      "reason": "Broad execution doctrine rather than a distinct tactical workflow; Matt's skills already favor reusable mechanisms."
+    },
+    "principle-encode-lessons-in-structure": {
+      "status": "excluded",
+      "reason": "Overlaps Matt's writing-for-agents and project-maintenance guidance."
+    },
+    "principle-exhaust-the-design-space": {
+      "status": "excluded",
+      "reason": "Overlaps Matt's prototype and grilling workflows."
+    },
+    "principle-experience-first": {
+      "status": "excluded",
+      "reason": "A product philosophy rather than a bounded tactical skill."
+    },
+    "principle-fix-root-causes": {
+      "status": "excluded",
+      "reason": "Directly covered by Matt's diagnosing-bugs skill."
+    },
+    "principle-foundational-thinking": {
+      "status": "excluded",
+      "reason": "Overlaps Matt's codebase-design and domain-modeling vocabulary."
+    },
+    "principle-guard-the-context-window": {
+      "status": "excluded",
+      "reason": "Harness-level operating guidance rather than a user-facing tactical workflow."
+    },
+    "principle-laziness-protocol": {
+      "status": "excluded",
+      "reason": "Broad agent behavior with substantial overlap across Matt's implementation skills."
+    },
+    "principle-make-operations-idempotent": {
+      "status": "excluded",
+      "reason": "Valuable design rule, but too narrow and context-dependent to install as a standalone companion skill."
+    },
+    "principle-migrate-callers-then-delete-legacy-apis": {
+      "status": "excluded",
+      "reason": "Migration advice belongs inside an implementation plan rather than a globally installed leaf skill."
+    },
+    "principle-minimize-reader-load": {
+      "status": "excluded",
+      "reason": "Overlaps Matt's codebase-design and writing-for-agents skills."
+    },
+    "principle-model-the-domain": {
+      "status": "excluded",
+      "reason": "Directly covered by Matt's domain-modeling skill."
+    },
+    "principle-never-block-on-the-human": {
+      "status": "excluded",
+      "reason": "Harness operating policy can conflict with user authorization boundaries."
+    },
+    "principle-outcome-oriented-execution": {
+      "status": "excluded",
+      "reason": "Broad execution guidance already supplied by Matt's implement workflow."
+    },
+    "principle-prove-it-works": {
+      "status": "excluded",
+      "reason": "Verification is covered more concretely by ppstack's verification-skill pair and Matt's implementation workflows."
+    },
+    "principle-redesign-from-first-principles": {
+      "status": "excluded",
+      "reason": "Overlaps Matt's codebase-design and prototype skills."
+    },
+    "principle-separate-before-serializing-shared-state": {
+      "status": "excluded",
+      "reason": "Specialized concurrency design advice is too narrow for the default companion set."
+    },
+    "principle-sequence-verifiable-units": {
+      "status": "excluded",
+      "reason": "Overlaps Matt's planning, stacked-prs, and implementation workflows."
+    },
+    "principle-subtract-before-you-add": {
+      "status": "excluded",
+      "reason": "Broad design preference already represented in Matt's codebase-design guidance."
+    },
+    "principle-type-system-discipline": {
+      "status": "excluded",
+      "reason": "Its useful TypeScript guidance is embedded directly in the adapted typescript-best-practices skill."
+    },
+    "recall": {
+      "status": "adapted",
+      "localName": "recall",
+      "reason": "Retained with an evidence ladder that works with or without harness history, memory, connectors, or workers."
+    },
+    "reflect": {
+      "status": "excluded",
+      "reason": "Transcript mining and automatic skill mutation are harness-specific and overlap Matt's agent-writing workflow."
+    },
+    "setup-pstack": {
+      "status": "excluded",
+      "reason": "Configures Cursor models and plugin rules, which ppstack deliberately does not own."
+    },
+    "show-me-your-work": {
+      "status": "adapted",
+      "localName": "show-me-your-work",
+      "reason": "Decision trails are harness-neutral; transcript paths and mandatory cross-model review were generalized."
+    },
+    "swarm": {
+      "status": "excluded",
+      "reason": "Worker orchestration depends on harness capabilities and is not a tactical companion skill."
+    },
+    "tdd": {
+      "status": "excluded",
+      "reason": "Exact-name and objective conflict with Matt's more complete tdd skill."
+    },
+    "teach": {
+      "status": "excluded",
+      "reason": "Exact-name conflict with Matt's stateful teaching skill."
+    },
+    "technical-writing": {
+      "status": "adapted",
+      "localName": "technical-writing",
+      "reason": "Distinct tactical writing standard; invocation metadata was made harness-neutral."
+    },
+    "typescript-best-practices": {
+      "status": "adapted",
+      "localName": "typescript-best-practices",
+      "reason": "Useful language-specific guidance made self-contained instead of depending on pstack principle skills."
+    },
+    "unslop": {
+      "status": "adapted",
+      "localName": "unslop",
+      "reason": "Retained as an explicit writing edit instead of a mandatory global style mode."
+    },
+    "why": {
+      "status": "adapted",
+      "localName": "why",
+      "reason": "Historical rationale research remains useful; connector and worker assumptions now degrade explicitly."
+    }
+  }
+}
