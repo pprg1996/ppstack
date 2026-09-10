@@ -35,7 +35,7 @@
     "how": {
       "status": "adapted",
       "localName": "how",
-      "reason": "Adds focused codebase explanation; hard-coded worker types and model choices were removed."
+      "reason": "Adds focused codebase explanation with a direct path for narrow questions and optional workers; architectural critique stays with Matt's design and review workflows."
     },
     "interrogate": {
       "status": "excluded",
@@ -46,6 +46,10 @@
       "localName": "maintain-verification-skill",
       "reason": "Keeps generated verification skills honest without assuming a harness directory or worker API."
     },
+    "make-bot-ui": {
+      "status": "excluded",
+      "reason": "Builds UI for Cursor webhook routines using Grok Bot APIs, secret-request cards, and Tailscale setup; this platform-specific integration is outside the portable companion scope."
+    },
     "no-comments": {
       "status": "adapted",
       "localName": "no-comments",
@@ -54,6 +58,10 @@
     "poteto-mode": {
       "status": "excluded",
       "reason": "Personal style mode and global orchestrator conflict with ppstack's harness-neutral companion role."
+    },
+    "principle-attack-the-premise": {
+      "status": "excluded",
+      "reason": "Reexamining a shared premise after repeated failed fixes belongs in Matt's diagnosing-bugs workflow; the actor-imbalance census is specialized diagnostic guidance."
     },
     "principle-boundary-discipline": {
       "status": "excluded",
@@ -135,6 +143,10 @@
       "status": "excluded",
       "reason": "Broad design preference already represented in Matt's codebase-design guidance."
     },
+    "principle-test-behavior-not-implementation": {
+      "status": "excluded",
+      "reason": "Behavior-focused assertions and rejecting implementation-coupled tests are already covered by Matt's tdd workflow."
+    },
     "principle-type-system-discipline": {
       "status": "excluded",
       "reason": "Its useful TypeScript guidance is embedded directly in the adapted typescript-best-practices skill."
@@ -146,7 +158,7 @@
     },
     "reflect": {
       "status": "excluded",
-      "reason": "Transcript mining and automatic skill mutation are harness-specific and overlap Matt's agent-writing workflow."
+      "reason": "Explicit retrospective transcript mining still depends on harness-specific history, reviewers, and backlog submission and overlaps Matt's writing-for-agents workflow."
     },
     "setup-pstack": {
       "status": "excluded",

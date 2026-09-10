@@ -50,7 +50,7 @@ npx skills update
 | --- | --- | --- |
 | `blast-radius` | Find downstream breakage and prove the safety fact a change depends on. | Parallel review falls back to sequential risk angles. |
 | `create-verification-skill` | Generate a project-local skill that drives the real app and captures evidence. | Discovers the active project-skill directory instead of assuming a Cursor path. |
-| `how` | Explain subsystem ownership, runtime flow, state, boundaries, and placement. | Uses optional isolated workers without named worker types or models. |
+| `how` | Explain subsystem ownership, runtime flow, state, boundaries, and placement. | Explains narrow questions directly and uses optional workers for independent slices. Architectural critique stays with Matt's design and review workflows. |
 | `maintain-verification-skill` | Audit a verification skill and feature map against source and live behavior. | Discovers skill locations and works sequentially when workers are unavailable. |
 | `no-comments` | Remove narration and encode real constraints in types, tests, checks, or structure. | Replaces the Cursor-specific reviewer agent with a portable review contract. |
 | `recall` | Reconstruct recent work and verify it against current state. | Climbs an evidence ladder and reports missing history or connectors as gaps. |
@@ -72,6 +72,7 @@ Every upstream skill is classified in [`selection.json`](selection.json). The cu
 | Harness-specific orchestration, history, configuration, or personal mode | `arena`, `automate-me`, `poteto-mode`, `reflect`, `setup-pstack`, `swarm`, `principle-guard-the-context-window`, `principle-never-block-on-the-human` |
 | Too small, too broad, or too specialized for the default companion set | `bro`, `principle-build-the-lever`, `principle-experience-first`, `principle-laziness-protocol`, `principle-make-operations-idempotent`, `principle-migrate-callers-then-delete-legacy-apis`, `principle-prove-it-works`, `principle-separate-before-serializing-shared-state` |
 | Folded into an adapted public skill | `principle-type-system-discipline` is incorporated into `typescript-best-practices`. |
+| New upstream skills outside the companion scope | `make-bot-ui` depends on Cursor webhook routines and Grok Bot APIs. `principle-attack-the-premise` overlaps diagnosis; `principle-test-behavior-not-implementation` overlaps TDD. |
 
 An exclusion is not a judgment that the upstream skill is poor. It means the skill does not fit ppstack's portable companion boundary. `selection.json` records the specific reason for every skill and is validated against the pinned upstream inventory.
 
