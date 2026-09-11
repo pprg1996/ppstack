@@ -3,8 +3,9 @@
   "upstreamPath": "pstack/skills",
   "skills": {
     "architect": {
-      "status": "excluded",
-      "reason": "Not imported in the current increment. Reevaluate as a pstack-derived replacement under docs/gpt6-migration.md; overlap with installed Matt skills no longer excludes it permanently."
+      "status": "adapted",
+      "localName": "architect",
+      "reason": "Replaces Matt codebase-design and improve-codebase-architecture with scoped design and review; removes fixed model panels, candidate quotas, mandatory reports, and implicit implementation for advice requests."
     },
     "arena": {
       "status": "excluded",
@@ -66,8 +67,9 @@
       "reason": "Embedded in debug as a conditional premise check; actor-imbalance measurements apply only when that mechanism is plausible."
     },
     "principle-boundary-discipline": {
-      "status": "excluded",
-      "reason": "Not imported in the current increment. Reevaluate as a pstack-derived replacement under docs/gpt6-migration.md; overlap with installed Matt skills no longer excludes it permanently."
+      "status": "adapted",
+      "localName": "architect",
+      "reason": "Embedded in architect design checks; validation follows trust and state guarantees instead of unconditional trust in internal types, and effect boundaries follow the production contract."
     },
     "principle-build-the-lever": {
       "status": "excluded",
@@ -91,8 +93,9 @@
       "reason": "Embedded in debug with evidence-based repair, proportional investigation, and persisted-state checks; replaces the corresponding Matt diagnosis role."
     },
     "principle-foundational-thinking": {
-      "status": "excluded",
-      "reason": "Not imported in the current increment. Reevaluate as a pstack-derived replacement under docs/gpt6-migration.md; overlap with installed Matt skills no longer excludes it permanently."
+      "status": "adapted",
+      "localName": "architect",
+      "reason": "Embedded in architect design checks; data structures, state ownership, and coherent migrations are task-driven rather than mandatory scaffolding or cleanup phases."
     },
     "principle-guard-the-context-window": {
       "status": "excluded",

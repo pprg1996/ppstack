@@ -10,7 +10,7 @@ ppstack is the owner's maintained fork for engineering workflows, adapted for GP
 
 Adaptations preserve domain knowledge and evidence while letting the agent choose an approach appropriate to the task. They remove hard-coded models, mandatory orchestration, unnecessary approval gates, and automatic publication. Overlapping skills are replaced deliberately, one capability at a time.
 
-See [the migration plan](docs/gpt6-migration.md) for replacement candidates, coverage gaps, and rollout criteria. The first replacements are `debug` for Matt Pocock's `diagnosing-bugs` and a pstack-derived `tdd` for test-first features and bug fixes.
+See [the migration plan](docs/gpt6-migration.md) for replacement candidates, coverage gaps, and rollout criteria. The first replacements are `debug` for Matt Pocock's `diagnosing-bugs`, a pstack-derived `tdd` for test-first features and bug fixes, and `architect` for design and architecture review.
 
 ## Install
 
@@ -46,6 +46,7 @@ npx skills update
 
 | Skill | Job | Portability adaptation |
 | --- | --- | --- |
+| `architect` | Design interfaces and system structure, or review architectural friction. | Grounds decisions in caller behavior and ownership without requiring model panels, reports, or implementation for advice requests. |
 | `blast-radius` | Find downstream breakage and prove the safety fact a change depends on. | Parallel review falls back to sequential risk angles. |
 | `debug` | Diagnose bugs from reproductions, live signals, or captured evidence; repair when requested. | Chooses the available evidence path without requiring a perfect reproduction, fixed models, or delegation. |
 | `create-verification-skill` | Generate a project-local skill that drives the real app and captures evidence. | Discovers the active project-skill directory instead of assuming a Cursor path. |
@@ -60,7 +61,7 @@ npx skills update
 | `unslop` | Remove generic AI patterns while preserving voice and meaning. | Becomes an explicit edit rather than a mandatory global mode. |
 | `why` | Reconstruct design motivation from source history and shared records. | Searches available evidence categories and reports unavailable ones. |
 
-All 13 public skills are adapted rather than verbatim copies.
+All 14 public skills are adapted rather than verbatim copies.
 
 ## What ppstack leaves out
 

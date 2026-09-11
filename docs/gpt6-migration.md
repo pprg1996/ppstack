@@ -22,7 +22,7 @@ The initial September 11 local installation lock recorded 25 Matt skills. The ta
 | --- | --- | --- |
 | `diagnosing-bugs` | Bug-fix and forensic playbooks; root-cause and premise principles | Replaced by `debug`; published and installed from the fork. The Matt skill was removed. |
 | `tdd` | `tdd`; behavior-testing principle | Adapted as `tdd`, extending pstack's regression workflow to requested test-first features and preserving valid assertion types. |
-| `codebase-design`, `improve-codebase-architecture` | `architect`; boundary and foundational-design principles | Assess together; avoid mandatory agreement gates or model panels for routine design. |
+| `codebase-design`, `improve-codebase-architecture` | `architect`; boundary and foundational-design principles | Replaced together by `architect`; preserves design and survey coverage with task-scoped implementation and optional exploration formats. |
 | `code-review` | `interrogate` | Preserve specification/standards coverage and working-tree review; support useful review without multi-model availability. |
 | `prototype` | Prototype playbook; `arena` | Compare experiment design and disposable artifacts; avoid mandatory competing implementations. |
 | `implement` | Feature playbook; `figure-it-out` | Extract focused implementation with completion criteria; avoid importing global mode machinery. |
@@ -73,3 +73,15 @@ The owner approved replacing Matt's `tdd` with a pstack-derived `tdd`, maintaine
 Same-name installation preserves existing `/tdd` references. Matt's retained `implement` skill separately requires pre-agreed seams; replacing `tdd` does not remove that caller's rule. Review it when adapting the implementation workflow.
 
 Representative behavioral checks remain: a new feature built test-first; a reproducible bug; an unavailable test environment with an explicit TDD requirement; a meaningful property test; a negative side-effect assertion; and a refactor that preserves behavior. Package validation and discovery do not establish model performance on these scenarios.
+
+## Third increment: architecture
+
+The owner approved replacing Matt's `codebase-design` and `improve-codebase-architecture` with `architect`, using the upstream name. It adapts upstream `architect`, its design references, and the boundary-discipline and foundational-thinking principles. The pinned upstream revision is unchanged.
+
+Coverage includes specific interface design, open-ended architecture surveys, caller usage, data and ownership decisions, dependency and testing strategy, existing ADRs, alternative shapes, migration planning, and implementation when requested. Review guidance lives in a conditional reference; design checks retain useful interface-depth and information-hiding concepts without enforcing a vocabulary.
+
+Intentional differences include no prescribed models, worker counts, alternative counts, full-system exploration, mandatory HTML report, or grilling loop. Design advice does not authorize implementation. Validation follows actual trust and state guarantees instead of unconditional internal trust. Test coverage is evaluated by the guarantees it protects rather than deleted wholesale when modules are combined. Scaffolding and cleanup must serve the requested change.
+
+`selection.json` maps all three upstream sources to the public `architect` directory. Retire only the two replaced Matt installations after package and discovery validation. The remaining Matt `ask-matt` router still names the retired architecture commands, and its setup documentation mentions them; those files are unchanged pending their own migration. Use `architect` directly or inventory-based discovery.
+
+Qualification: repository and skill validators, conditional-reference resolution, upstream inventory audit, public discovery, installation equality, and fresh Codex discovery are required for this increment. These structural checks do not establish behavioral superiority. Representative behavioral scenarios remain unexecuted: a review with no justified refactor; a narrow design-only request; an authorized refactor preserving regression coverage; a compatibility boundary that should remain; and a runtime invariant that static types cannot guarantee.
