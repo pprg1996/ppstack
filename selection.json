@@ -147,8 +147,9 @@
       "reason": "Not imported in the current increment. Reevaluate as a pstack-derived replacement under docs/gpt6-migration.md; overlap with installed Matt skills no longer excludes it permanently."
     },
     "principle-test-behavior-not-implementation": {
-      "status": "excluded",
-      "reason": "Not imported in the current increment. Reevaluate as a pstack-derived replacement under docs/gpt6-migration.md; overlap with installed Matt skills no longer excludes it permanently."
+      "status": "adapted",
+      "localName": "tdd",
+      "reason": "Embedded in tdd/tests.md; retains independent behavioral evidence while replacing literal-only assertions and the universal undefined-return heuristic with contract-specific checks."
     },
     "principle-type-system-discipline": {
       "status": "excluded",
@@ -177,8 +178,9 @@
       "reason": "Worker orchestration depends on harness capabilities and is not a tactical companion skill."
     },
     "tdd": {
-      "status": "excluded",
-      "reason": "Not imported in the current increment. Reevaluate as a pstack-derived replacement under docs/gpt6-migration.md; overlap with installed Matt skills no longer excludes it permanently."
+      "status": "adapted",
+      "localName": "tdd",
+      "reason": "Replaces Matt's tdd with the pstack regression workflow extended to requested test-first features; infers established boundaries, permits refactoring, and preserves explicit testing requirements."
     },
     "teach": {
       "status": "excluded",

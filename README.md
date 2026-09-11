@@ -10,7 +10,7 @@ ppstack is the owner's maintained fork for engineering workflows, adapted for GP
 
 Adaptations preserve domain knowledge and evidence while letting the agent choose an approach appropriate to the task. They remove hard-coded models, mandatory orchestration, unnecessary approval gates, and automatic publication. Overlapping skills are replaced deliberately, one capability at a time.
 
-See [the migration plan](docs/gpt6-migration.md) for replacement candidates, coverage gaps, and rollout criteria. The first replacement is `debug`, which takes over diagnosis and requested bug repair from Matt Pocock's `diagnosing-bugs`.
+See [the migration plan](docs/gpt6-migration.md) for replacement candidates, coverage gaps, and rollout criteria. The first replacements are `debug` for Matt Pocock's `diagnosing-bugs` and a pstack-derived `tdd` for test-first features and bug fixes.
 
 ## Install
 
@@ -54,12 +54,13 @@ npx skills update
 | `no-comments` | Remove narration and encode real constraints in types, tests, checks, or structure. | Replaces the Cursor-specific reviewer agent with a portable review contract. |
 | `recall` | Reconstruct recent work and verify it against current state. | Climbs an evidence ladder and reports missing history or connectors as gaps. |
 | `show-me-your-work` | Keep a reviewable TSV decision trail for long or unattended work. | Uses any available run evidence and makes isolated review capability-dependent. |
+| `tdd` | Build requested features test-first and lock down bugs with focused regression tests. | Infers test boundaries, supports red-green-refactor, and preserves useful assertion and test types. |
 | `technical-writing` | Apply a layered technical-writing standard to docs and engineering prose. | Removes harness invocation metadata. |
 | `typescript-best-practices` | Apply disciplined TypeScript modeling and boundary validation. | Embeds required type guidance instead of depending on pstack principle skills. |
 | `unslop` | Remove generic AI patterns while preserving voice and meaning. | Becomes an explicit edit rather than a mandatory global mode. |
 | `why` | Reconstruct design motivation from source history and shared records. | Searches available evidence categories and reports unavailable ones. |
 
-All 12 public skills are adapted rather than verbatim copies.
+All 13 public skills are adapted rather than verbatim copies.
 
 ## What ppstack leaves out
 
