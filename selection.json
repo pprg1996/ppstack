@@ -39,8 +39,9 @@
       "reason": "Focused codebase explanation with a direct path for narrow questions and optional workers; architecture decisions belong to dedicated design or review workflows."
     },
     "interrogate": {
-      "status": "excluded",
-      "reason": "Not imported in the current increment. Reevaluate as a pstack-derived replacement under docs/gpt6-migration.md; overlap with installed Matt skills no longer excludes it permanently."
+      "status": "adapted",
+      "localName": "code-review",
+      "reason": "Adapts evidence-based adversarial review under the existing code-review entry point; preserves requirements and standards coverage, handles working-tree scope, and removes fixed model panels, finding quotas, and universal structural blockers."
     },
     "maintain-verification-skill": {
       "status": "adapted",

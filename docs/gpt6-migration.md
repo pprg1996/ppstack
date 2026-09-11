@@ -23,7 +23,7 @@ The initial September 11 local installation lock recorded 25 Matt skills. The ta
 | `diagnosing-bugs` | Bug-fix and forensic playbooks; root-cause and premise principles | Replaced by `debug`; published and installed from the fork. The Matt skill was removed. |
 | `tdd` | `tdd`; behavior-testing principle | Adapted as `tdd`, extending pstack's regression workflow to requested test-first features and preserving valid assertion types. |
 | `codebase-design`, `improve-codebase-architecture` | `architect`; boundary and foundational-design principles | Replaced together by `architect`; preserves design and survey coverage with task-scoped implementation and optional exploration formats. |
-| `code-review` | `interrogate` | Preserve specification/standards coverage and working-tree review; support useful review without multi-model availability. |
+| `code-review` | `interrogate` | Replaced in place by a pstack-derived `code-review`; retains caller compatibility, requirements and standards checks, and committed or working-tree scopes. |
 | `prototype` | Prototype playbook; `arena` | Compare experiment design and disposable artifacts; avoid mandatory competing implementations. |
 | `implement` | Feature playbook; `figure-it-out` | Extract focused implementation with completion criteria; avoid importing global mode machinery. |
 | `domain-modeling` | Domain-modeling and boundary principles | Check glossary and ADR ownership; a principle alone may not replace the full workflow. |
@@ -85,3 +85,15 @@ Intentional differences include no prescribed models, worker counts, alternative
 `selection.json` maps all three upstream sources to the public `architect` directory. Retire only the two replaced Matt installations after package and discovery validation. The remaining Matt `ask-matt` router still names the retired architecture commands, and its setup documentation mentions them; those files are unchanged pending their own migration. Use `architect` directly or inventory-based discovery.
 
 Qualification: repository and skill validators, conditional-reference resolution, upstream inventory audit, public discovery, installation equality, and fresh Codex discovery are required for this increment. These structural checks do not establish behavioral superiority. Representative behavioral scenarios remain unexecuted: a review with no justified refactor; a narrow design-only request; an authorized refactor preserving regression coverage; a compatibility boundary that should remain; and a runtime invariant that static types cannot guarantee.
+
+## Fourth increment: code review
+
+The owner approved adapting pstack's `interrogate` as the replacement for Matt's `code-review`. The public name remains `code-review` because the retained `implement` workflow directly invokes it; `ask-matt` and `stacked-prs` also reference that name. This is a same-name source replacement, not a separate globally installed `interrogate` skill.
+
+The adaptation covers explicit revisions, PRs, branches, staged and unstaged work, and relevant untracked files. It retains requirements and repository-standard coverage alongside pstack's correctness, security, integration, structural, and evidence-based judgment lenses. Optional independent reviewers do not replace source verification; consensus does not establish correctness. An explicit multi-reviewer request remains part of the task where the environment supports it.
+
+Intentional differences: no named models or Cursor configuration, no mandatory parallel workers, no automatic configuration PRs, no arbitrary finding limit or file-length blocker, no required redesign, and no forced pause just because a standalone spec or tracker setup is absent. Review-only requests preserve source; a review-and-fix request can proceed through repair and verification. Findings can be ranked by impact while retaining their requirements or standards basis.
+
+OpenAI's Astra article supports concise discovery, progressive disclosure, and reconsidering rigid recipes. It does not establish that this particular review design outperforms either original. The owner preference determines the pstack starting point. Scope corrections are concrete Git coverage fixes; optional delegation and reporting choices remain adaptations whose behavioral effectiveness has not been established.
+
+Qualification includes repository and skill validators, reference resolution, public discovery, a disposable Git fixture checking comparison coverage, pinned upstream audit, published installation equality, unchanged unrelated skill inventories, and fresh Codex discovery. The fixture validates Git commands, not agent behavior. Comparative reviews measuring defects caught, false positives, missed requirements, time, and cost remain unexecuted.

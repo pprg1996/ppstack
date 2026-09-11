@@ -47,6 +47,7 @@ npx skills update
 | Skill | Job | Portability adaptation |
 | --- | --- | --- |
 | `architect` | Design interfaces and system structure, or review architectural friction. | Grounds decisions in caller behavior and ownership without requiring model panels, reports, or implementation for advice requests. |
+| `code-review` | Review defects, requirements, and repository standards across committed or working-tree changes. | Adapts interrogate while preserving existing callers; evidence determines severity, and multiple reviewers are optional. |
 | `blast-radius` | Find downstream breakage and prove the safety fact a change depends on. | Parallel review falls back to sequential risk angles. |
 | `debug` | Diagnose bugs from reproductions, live signals, or captured evidence; repair when requested. | Chooses the available evidence path without requiring a perfect reproduction, fixed models, or delegation. |
 | `create-verification-skill` | Generate a project-local skill that drives the real app and captures evidence. | Discovers the active project-skill directory instead of assuming a Cursor path. |
@@ -61,7 +62,7 @@ npx skills update
 | `unslop` | Remove generic AI patterns while preserving voice and meaning. | Becomes an explicit edit rather than a mandatory global mode. |
 | `why` | Reconstruct design motivation from source history and shared records. | Searches available evidence categories and reports unavailable ones. |
 
-All 14 public skills are adapted rather than verbatim copies.
+All 15 public skills are adapted rather than verbatim copies.
 
 ## What ppstack leaves out
 
