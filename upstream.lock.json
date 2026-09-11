@@ -3,7 +3,7 @@
   "repository": "https://github.com/cursor/plugins.git",
   "branch": "main",
   "path": "pstack/skills",
-  "commit": "7366ac128bdf95f45e6734f412b49a4031800169",
+  "commit": "f5bdd6826fd0a0d9cbc4347134c3a74a200b9d9d",
   "skills": {
     "architect": "c7c8e7b3a383b782fe95b42978f50bff810313e5e7d81cc1036a1efa4597eec4",
     "arena": "512bf1b6d4405fa7e5fc3281f63a975b11f2814415ba7c72809af5508f710af5",
@@ -17,7 +17,7 @@
     "maintain-verification-skill": "0d58a5b503197681a39404d0cbac0ae3b9969123e32028e7e5cb43298f94e5f5",
     "make-bot-ui": "5fa5eac756cbf35e67f99f0442b9f956a0f9e48e9a9f3aaae50308a94764147f",
     "no-comments": "117448f50f5e0cf8f52f737fd9e5a1fcfbb026ceb0a7b7b32fac267f9c2e7028",
-    "poteto-mode": "82c57b3fceb916ddb124c9bca36f2f99317b056dba7b455f8f376d8b632b2d0a",
+    "poteto-mode": "e102e117ede009e8eb1fc41d3c4d307461fd612b756b5d1d5942e6caedf3ddaa",
     "principle-attack-the-premise": "4d7616448ba38512be9a05bba2b2a5eb9ae5497d89f3d1454c46a33b0ad99f2d",
     "principle-boundary-discipline": "55d63ee9d377c4a518339a648526878d27133f305ca00d519be95a729c8dbd44",
     "principle-build-the-lever": "048f9a2ce932b49f1f644b0ba9f67b4aa058b57c20769ea27339c33b7c8c70ee",

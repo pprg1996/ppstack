@@ -1,6 +1,6 @@
 ---
 name: update-ppstack
-description: "Synchronize a ppstack checkout with the upstream pstack skill collection while preserving ppstack's portability and companion scope. For ppstack maintainers only."
+description: "Synchronize a ppstack checkout with the upstream pstack skill collection while preserving ppstack's portability and GPT-6 adaptations. For ppstack maintainers only."
 metadata:
   internal: true
 ---
@@ -16,7 +16,8 @@ Update the ppstack source repository from `cursor/plugins/pstack`. This is a mai
 - Keep public skills independent of Cursor paths, plugin manifests, named worker APIs, hard-coded model slugs, and guaranteed access to history or connectors.
 - Describe optional capabilities and provide a sequential or reduced-evidence fallback.
 - Preserve attribution and the upstream MIT license.
-- Keep the companion boundary: Matt's skills organize project work; ppstack supplies tactical workflows. Exclude duplicate names, equivalent objectives, personal modes, and global orchestrators.
+- Follow `docs/gpt6-migration.md` for replacement scope. Overlap with Matt's skills is a migration opportunity, not a reason to exclude an upstream workflow. Replace one capability at a time after checking coverage. Keep each task governed by one applicable workflow.
+- Preserve GPT-6 adaptations: concise triggers, conditional references, evidence-based completion, and task-appropriate choice of approach. Import domain knowledge without mandatory model panels, ideal-reproduction gates, or automatic publication.
 - Produce a reviewable diff. Do not commit or push unless the user separately authorizes publication.
 
 ## Check

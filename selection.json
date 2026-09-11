@@ -4,15 +4,15 @@
   "skills": {
     "architect": {
       "status": "excluded",
-      "reason": "Project-level architecture orchestration overlaps Matt's codebase-design and planning skills."
+      "reason": "Not imported in the current increment. Reevaluate as a pstack-derived replacement under docs/gpt6-migration.md; overlap with installed Matt skills no longer excludes it permanently."
     },
     "arena": {
       "status": "excluded",
-      "reason": "Multi-candidate orchestration depends on worker features and overlaps Matt's prototype and review workflows."
+      "reason": "Not imported in the current increment. Reevaluate as a pstack-derived replacement under docs/gpt6-migration.md; overlap with installed Matt skills no longer excludes it permanently."
     },
     "automate-me": {
       "status": "excluded",
-      "reason": "Depends on harness-specific history and skill-generation commands; Matt already provides setup and agent-writing workflows."
+      "reason": "Not imported in the current increment. Reevaluate as a pstack-derived replacement under docs/gpt6-migration.md; overlap with installed Matt skills no longer excludes it permanently."
     },
     "blast-radius": {
       "status": "adapted",
@@ -30,16 +30,16 @@
     },
     "figure-it-out": {
       "status": "excluded",
-      "reason": "Top-level execution orchestrator overlaps Matt's implement and wayfinder workflows."
+      "reason": "Not imported in the current increment. Reevaluate as a pstack-derived replacement under docs/gpt6-migration.md; overlap with installed Matt skills no longer excludes it permanently."
     },
     "how": {
       "status": "adapted",
       "localName": "how",
-      "reason": "Adds focused codebase explanation with a direct path for narrow questions and optional workers; architectural critique stays with Matt's design and review workflows."
+      "reason": "Focused codebase explanation with a direct path for narrow questions and optional workers; architecture decisions belong to dedicated design or review workflows."
     },
     "interrogate": {
       "status": "excluded",
-      "reason": "Adversarial multi-model review overlaps Matt's code-review and grilling skills."
+      "reason": "Not imported in the current increment. Reevaluate as a pstack-derived replacement under docs/gpt6-migration.md; overlap with installed Matt skills no longer excludes it permanently."
     },
     "maintain-verification-skill": {
       "status": "adapted",
@@ -48,7 +48,7 @@
     },
     "make-bot-ui": {
       "status": "excluded",
-      "reason": "Builds UI for Cursor webhook routines using Grok Bot APIs, secret-request cards, and Tailscale setup; this platform-specific integration is outside the portable companion scope."
+      "reason": "Depends on Cursor webhook routines and Grok Bot APIs; this platform-specific integration is outside the current portable engineering scope."
     },
     "no-comments": {
       "status": "adapted",
@@ -56,40 +56,43 @@
       "reason": "The comment audit is useful; the Cursor-specific reviewer agent was replaced with a portable review contract."
     },
     "poteto-mode": {
-      "status": "excluded",
-      "reason": "Personal style mode and global orchestrator conflict with ppstack's harness-neutral companion role."
+      "status": "adapted",
+      "localName": "debug",
+      "reason": "Extracts only bug-fix, runtime-forensics, and trace-forensics playbooks into debug; removes global mode, fixed models, required delegation, and publication steps."
     },
     "principle-attack-the-premise": {
-      "status": "excluded",
-      "reason": "Reexamining a shared premise after repeated failed fixes belongs in Matt's diagnosing-bugs workflow; the actor-imbalance census is specialized diagnostic guidance."
+      "status": "adapted",
+      "localName": "debug",
+      "reason": "Embedded in debug as a conditional premise check; actor-imbalance measurements apply only when that mechanism is plausible."
     },
     "principle-boundary-discipline": {
       "status": "excluded",
-      "reason": "Useful guidance already covered by Matt's codebase-design and domain-modeling skills."
+      "reason": "Not imported in the current increment. Reevaluate as a pstack-derived replacement under docs/gpt6-migration.md; overlap with installed Matt skills no longer excludes it permanently."
     },
     "principle-build-the-lever": {
       "status": "excluded",
-      "reason": "Broad execution doctrine rather than a distinct tactical workflow; Matt's skills already favor reusable mechanisms."
+      "reason": "Not imported in the current increment. Reevaluate as a pstack-derived replacement under docs/gpt6-migration.md; overlap with installed Matt skills no longer excludes it permanently."
     },
     "principle-encode-lessons-in-structure": {
       "status": "excluded",
-      "reason": "Overlaps Matt's writing-for-agents and project-maintenance guidance."
+      "reason": "Not imported in the current increment. Reevaluate as a pstack-derived replacement under docs/gpt6-migration.md; overlap with installed Matt skills no longer excludes it permanently."
     },
     "principle-exhaust-the-design-space": {
       "status": "excluded",
-      "reason": "Overlaps Matt's prototype and grilling workflows."
+      "reason": "Not imported in the current increment. Reevaluate as a pstack-derived replacement under docs/gpt6-migration.md; overlap with installed Matt skills no longer excludes it permanently."
     },
     "principle-experience-first": {
       "status": "excluded",
       "reason": "A product philosophy rather than a bounded tactical skill."
     },
     "principle-fix-root-causes": {
-      "status": "excluded",
-      "reason": "Directly covered by Matt's diagnosing-bugs skill."
+      "status": "adapted",
+      "localName": "debug",
+      "reason": "Embedded in debug with evidence-based repair, proportional investigation, and persisted-state checks; replaces the corresponding Matt diagnosis role."
     },
     "principle-foundational-thinking": {
       "status": "excluded",
-      "reason": "Overlaps Matt's codebase-design and domain-modeling vocabulary."
+      "reason": "Not imported in the current increment. Reevaluate as a pstack-derived replacement under docs/gpt6-migration.md; overlap with installed Matt skills no longer excludes it permanently."
     },
     "principle-guard-the-context-window": {
       "status": "excluded",
@@ -97,7 +100,7 @@
     },
     "principle-laziness-protocol": {
       "status": "excluded",
-      "reason": "Broad agent behavior with substantial overlap across Matt's implementation skills."
+      "reason": "Not imported in the current increment. Reevaluate as a pstack-derived replacement under docs/gpt6-migration.md; overlap with installed Matt skills no longer excludes it permanently."
     },
     "principle-make-operations-idempotent": {
       "status": "excluded",
@@ -109,11 +112,11 @@
     },
     "principle-minimize-reader-load": {
       "status": "excluded",
-      "reason": "Overlaps Matt's codebase-design and writing-for-agents skills."
+      "reason": "Not imported in the current increment. Reevaluate as a pstack-derived replacement under docs/gpt6-migration.md; overlap with installed Matt skills no longer excludes it permanently."
     },
     "principle-model-the-domain": {
       "status": "excluded",
-      "reason": "Directly covered by Matt's domain-modeling skill."
+      "reason": "Not imported in the current increment. Reevaluate as a pstack-derived replacement under docs/gpt6-migration.md; overlap with installed Matt skills no longer excludes it permanently."
     },
     "principle-never-block-on-the-human": {
       "status": "excluded",
@@ -121,15 +124,15 @@
     },
     "principle-outcome-oriented-execution": {
       "status": "excluded",
-      "reason": "Broad execution guidance already supplied by Matt's implement workflow."
+      "reason": "Not imported in the current increment. Reevaluate as a pstack-derived replacement under docs/gpt6-migration.md; overlap with installed Matt skills no longer excludes it permanently."
     },
     "principle-prove-it-works": {
       "status": "excluded",
-      "reason": "Verification is covered more concretely by ppstack's verification-skill pair and Matt's implementation workflows."
+      "reason": "Not imported in the current increment. Reevaluate as a pstack-derived replacement under docs/gpt6-migration.md; overlap with installed Matt skills no longer excludes it permanently."
     },
     "principle-redesign-from-first-principles": {
       "status": "excluded",
-      "reason": "Overlaps Matt's codebase-design and prototype skills."
+      "reason": "Not imported in the current increment. Reevaluate as a pstack-derived replacement under docs/gpt6-migration.md; overlap with installed Matt skills no longer excludes it permanently."
     },
     "principle-separate-before-serializing-shared-state": {
       "status": "excluded",
@@ -137,15 +140,15 @@
     },
     "principle-sequence-verifiable-units": {
       "status": "excluded",
-      "reason": "Overlaps Matt's planning, stacked-prs, and implementation workflows."
+      "reason": "Not imported in the current increment. Reevaluate as a pstack-derived replacement under docs/gpt6-migration.md; overlap with installed Matt skills no longer excludes it permanently."
     },
     "principle-subtract-before-you-add": {
       "status": "excluded",
-      "reason": "Broad design preference already represented in Matt's codebase-design guidance."
+      "reason": "Not imported in the current increment. Reevaluate as a pstack-derived replacement under docs/gpt6-migration.md; overlap with installed Matt skills no longer excludes it permanently."
     },
     "principle-test-behavior-not-implementation": {
       "status": "excluded",
-      "reason": "Behavior-focused assertions and rejecting implementation-coupled tests are already covered by Matt's tdd workflow."
+      "reason": "Not imported in the current increment. Reevaluate as a pstack-derived replacement under docs/gpt6-migration.md; overlap with installed Matt skills no longer excludes it permanently."
     },
     "principle-type-system-discipline": {
       "status": "excluded",
@@ -158,7 +161,7 @@
     },
     "reflect": {
       "status": "excluded",
-      "reason": "Explicit retrospective transcript mining still depends on harness-specific history, reviewers, and backlog submission and overlaps Matt's writing-for-agents workflow."
+      "reason": "Not imported in the current increment. Reevaluate as a pstack-derived replacement under docs/gpt6-migration.md; overlap with installed Matt skills no longer excludes it permanently."
     },
     "setup-pstack": {
       "status": "excluded",
@@ -175,11 +178,11 @@
     },
     "tdd": {
       "status": "excluded",
-      "reason": "Exact-name and objective conflict with Matt's more complete tdd skill."
+      "reason": "Not imported in the current increment. Reevaluate as a pstack-derived replacement under docs/gpt6-migration.md; overlap with installed Matt skills no longer excludes it permanently."
     },
     "teach": {
       "status": "excluded",
-      "reason": "Exact-name conflict with Matt's stateful teaching skill."
+      "reason": "Not imported in the current increment. Reevaluate as a pstack-derived replacement under docs/gpt6-migration.md; overlap with installed Matt skills no longer excludes it permanently."
     },
     "technical-writing": {
       "status": "adapted",

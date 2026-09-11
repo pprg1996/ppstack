@@ -1,18 +1,16 @@
 # ppstack
 
-Portable tactical skills adapted from [pstack](https://github.com/cursor/plugins/tree/main/pstack).
+Portable engineering skills adapted from [pstack](https://github.com/cursor/plugins/tree/main/pstack).
 
 ppstack is a skill collection, not a plugin. It contains no MCP server, agent definition, automation, model configuration, or Cursor rule. Its public skills use capabilities when they are available and degrade explicitly when a harness lacks workers, history, connectors, or a known project-skill directory.
 
 ## Why ppstack exists
 
-[Matt Pocock's skills](https://github.com/mattpocock/skills) provide the project spine: planning, implementation, debugging, architecture, testing, review, and handoff. ppstack adds tactical lenses used inside that work. It does not replace or orchestrate Matt's collection.
+ppstack is the owner's maintained fork for engineering workflows, adapted for GPT-6 and portable across agent harnesses. Prefer pstack-derived replacements where they cover the task well; retain useful skills from other sources where no replacement is ready.
 
-The boundary is intentional:
+Adaptations preserve domain knowledge and evidence while letting the agent choose an approach appropriate to the task. They remove hard-coded models, mandatory orchestration, unnecessary approval gates, and automatic publication. Overlapping skills are replaced deliberately, one capability at a time.
 
-- Matt's skills decide how a project-sized effort moves forward.
-- ppstack skills answer narrower questions such as how a subsystem works, why a decision exists, what a change could break, or how to prove an app still behaves correctly.
-- Exact-name conflicts, equivalent objectives, personal modes, and global orchestrators stay out.
+See [the migration plan](docs/gpt6-migration.md) for replacement candidates, coverage gaps, and rollout criteria. The first replacement is `debug`, which takes over diagnosis and requested bug repair from Matt Pocock's `diagnosing-bugs`.
 
 ## Install
 
@@ -46,11 +44,12 @@ npx skills update
 
 ## Public skills
 
-| Skill | Tactical job | Portability adaptation |
+| Skill | Job | Portability adaptation |
 | --- | --- | --- |
 | `blast-radius` | Find downstream breakage and prove the safety fact a change depends on. | Parallel review falls back to sequential risk angles. |
+| `debug` | Diagnose bugs from reproductions, live signals, or captured evidence; repair when requested. | Chooses the available evidence path without requiring a perfect reproduction, fixed models, or delegation. |
 | `create-verification-skill` | Generate a project-local skill that drives the real app and captures evidence. | Discovers the active project-skill directory instead of assuming a Cursor path. |
-| `how` | Explain subsystem ownership, runtime flow, state, boundaries, and placement. | Explains narrow questions directly and uses optional workers for independent slices. Architectural critique stays with Matt's design and review workflows. |
+| `how` | Explain subsystem ownership, runtime flow, state, boundaries, and placement. | Explains narrow questions directly and uses optional workers for independent slices. Architectural critique belongs to a dedicated design or review workflow. |
 | `maintain-verification-skill` | Audit a verification skill and feature map against source and live behavior. | Discovers skill locations and works sequentially when workers are unavailable. |
 | `no-comments` | Remove narration and encode real constraints in types, tests, checks, or structure. | Replaces the Cursor-specific reviewer agent with a portable review contract. |
 | `recall` | Reconstruct recent work and verify it against current state. | Climbs an evidence ladder and reports missing history or connectors as gaps. |
@@ -60,21 +59,15 @@ npx skills update
 | `unslop` | Remove generic AI patterns while preserving voice and meaning. | Becomes an explicit edit rather than a mandatory global mode. |
 | `why` | Reconstruct design motivation from source history and shared records. | Searches available evidence categories and reports unavailable ones. |
 
-All 11 public skills are adapted rather than verbatim copies.
+All 12 public skills are adapted rather than verbatim copies.
 
 ## What ppstack leaves out
 
-Every upstream skill is classified in [`selection.json`](selection.json). The current exclusions fall into these groups:
+Every upstream skill is classified in [`selection.json`](selection.json). The fork can extract a focused workflow from a larger upstream skill: `poteto-mode`'s debugging playbooks and two diagnostic principles are adapted into the single public `debug` skill; the global mode is not imported.
 
-| Reason | Excluded upstream skills |
-| --- | --- |
-| Project orchestration or substantial overlap with Matt's skills | `architect`, `figure-it-out`, `interrogate`, `tdd`, `teach`, `principle-boundary-discipline`, `principle-encode-lessons-in-structure`, `principle-exhaust-the-design-space`, `principle-fix-root-causes`, `principle-foundational-thinking`, `principle-minimize-reader-load`, `principle-model-the-domain`, `principle-outcome-oriented-execution`, `principle-redesign-from-first-principles`, `principle-sequence-verifiable-units`, `principle-subtract-before-you-add` |
-| Harness-specific orchestration, history, configuration, or personal mode | `arena`, `automate-me`, `poteto-mode`, `reflect`, `setup-pstack`, `swarm`, `principle-guard-the-context-window`, `principle-never-block-on-the-human` |
-| Too small, too broad, or too specialized for the default companion set | `bro`, `principle-build-the-lever`, `principle-experience-first`, `principle-laziness-protocol`, `principle-make-operations-idempotent`, `principle-migrate-callers-then-delete-legacy-apis`, `principle-prove-it-works`, `principle-separate-before-serializing-shared-state` |
-| Folded into an adapted public skill | `principle-type-system-discipline` is incorporated into `typescript-best-practices`. |
-| New upstream skills outside the companion scope | `make-bot-ui` depends on Cursor webhook routines and Grok Bot APIs. `principle-attack-the-premise` overlaps diagnosis; `principle-test-behavior-not-implementation` overlaps TDD. |
+Some former exclusions were based on overlap with Matt's skills. Those are now migration candidates, not a permanent boundary. They remain excluded from the current package until their replacements are ready. The [migration plan](docs/gpt6-migration.md) maps the installed collection and distinguishes likely replacements from partial overlap.
 
-An exclusion is not a judgment that the upstream skill is poor. It means the skill does not fit ppstack's portable companion boundary. `selection.json` records the specific reason for every skill and is validated against the pinned upstream inventory.
+Platform-specific integrations, personal modes, and blanket operating rules remain out unless a requested workflow gives them a portable, well-scoped role. `selection.json` records the reason for each upstream skill and is validated against the pinned inventory.
 
 ## Two update paths
 

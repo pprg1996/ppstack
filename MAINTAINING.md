@@ -14,6 +14,10 @@ INSTALL_INTERNAL_SKILLS=1 \
 
 You can also give `maintainer-skills/update-ppstack/SKILL.md` directly to a harness that supports local skills. The workflow itself is harness-neutral.
 
+## Scope and replacements
+
+Use `docs/gpt6-migration.md` for the owner's current migration direction. ppstack may replace overlapping third-party skills; the earlier companion-only restriction is retired. Document each replacement's coverage, provenance, and validation before changing the active installation.
+
 ## Check upstream
 
 ```bash
