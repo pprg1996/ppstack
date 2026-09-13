@@ -53,9 +53,8 @@
       "reason": "Depends on Cursor webhook routines and Grok Bot APIs; this platform-specific integration is outside the current portable engineering scope."
     },
     "no-comments": {
-      "status": "adapted",
-      "localName": "no-comments",
-      "reason": "The comment audit is useful; the Cursor-specific reviewer agent was replaced with a portable review contract."
+      "status": "excluded",
+      "reason": "Removed at the owner's request on 2026-09-13; comment cleanup belongs in scoped code review rather than a separate global workflow."
     },
     "poteto-mode": {
       "status": "adapted",
@@ -191,9 +190,8 @@
       "reason": "Not imported in the current increment. Reevaluate as a pstack-derived replacement under docs/gpt6-migration.md; overlap with installed Matt skills no longer excludes it permanently."
     },
     "technical-writing": {
-      "status": "adapted",
-      "localName": "technical-writing",
-      "reason": "Distinct tactical writing standard; invocation metadata was made harness-neutral."
+      "status": "excluded",
+      "reason": "Removed at the owner's request on 2026-09-13; a dedicated layered writing standard is outside the chosen minimal collection."
     },
     "typescript-best-practices": {
       "status": "adapted",
@@ -201,9 +199,8 @@
       "reason": "Useful language-specific guidance made self-contained instead of depending on pstack principle skills."
     },
     "unslop": {
-      "status": "adapted",
-      "localName": "unslop",
-      "reason": "Retained as an explicit writing edit instead of a mandatory global style mode."
+      "status": "excluded",
+      "reason": "Removed at the owner's request on 2026-09-13; general writing preferences do not require a separate global editing skill."
     },
     "why": {
       "status": "adapted",

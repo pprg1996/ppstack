@@ -97,3 +97,13 @@ Intentional differences: no named models or Cursor configuration, no mandatory p
 OpenAI's Astra article supports concise discovery, progressive disclosure, and reconsidering rigid recipes. It does not establish that this particular review design outperforms either original. The owner preference determines the pstack starting point. Scope corrections are concrete Git coverage fixes; optional delegation and reporting choices remain adaptations whose behavioral effectiveness has not been established.
 
 Qualification includes repository and skill validators, reference resolution, public discovery, a disposable Git fixture checking comparison coverage, pinned upstream audit, published installation equality, unchanged unrelated skill inventories, and fresh Codex discovery. The fixture validates Git commands, not agent behavior. Comparative reviews measuring defects caught, false positives, missed requirements, time, and cost remain unexecuted.
+
+## September 13 cleanup: reduce the installed collection
+
+The owner chose to retain only Matt's `domain-modeling`, `prototype`, `wizard`, `grilling`, and `teach`, with their existing invocation settings. The other 15 remaining Matt skills, including `ask-matt`, were removed from the global installation. Earlier router caveats above describe the historical migration state; the obsolete router is no longer installed.
+
+The owner also requested removing `no-comments`, `technical-writing`, and `unslop` from both ppstack's public package and the global installation. They remain classified as excluded in `selection.json` so upstream synchronization will not silently reintroduce them. The upstream inventory and pinned revision are unchanged; the public collection now contains 12 skills.
+
+`show-me-your-work` keeps its concise writing guidance directly and no longer depends on `unslop`. Reinstall its published version when retiring those three skills. Existing consumers must remove their installed copies of the retired skills; repository deletion alone does not constitute uninstalling a consumer's local files.
+
+This cleanup removes optional workflows rather than replacing them with new skills. It does not claim measured model-performance gains.

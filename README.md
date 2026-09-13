@@ -53,16 +53,13 @@ npx skills update
 | `create-verification-skill` | Generate a project-local skill that drives the real app and captures evidence. | Discovers the active project-skill directory instead of assuming a Cursor path. |
 | `how` | Explain subsystem ownership, runtime flow, state, boundaries, and placement. | Explains narrow questions directly and uses optional workers for independent slices. Architectural critique belongs to a dedicated design or review workflow. |
 | `maintain-verification-skill` | Audit a verification skill and feature map against source and live behavior. | Discovers skill locations and works sequentially when workers are unavailable. |
-| `no-comments` | Remove narration and encode real constraints in types, tests, checks, or structure. | Replaces the Cursor-specific reviewer agent with a portable review contract. |
 | `recall` | Reconstruct recent work and verify it against current state. | Climbs an evidence ladder and reports missing history or connectors as gaps. |
 | `show-me-your-work` | Keep a reviewable TSV decision trail for long or unattended work. | Uses any available run evidence and makes isolated review capability-dependent. |
 | `tdd` | Build requested features test-first and lock down bugs with focused regression tests. | Infers test boundaries, supports red-green-refactor, and preserves useful assertion and test types. |
-| `technical-writing` | Apply a layered technical-writing standard to docs and engineering prose. | Removes harness invocation metadata. |
 | `typescript-best-practices` | Apply disciplined TypeScript modeling and boundary validation. | Embeds required type guidance instead of depending on pstack principle skills. |
-| `unslop` | Remove generic AI patterns while preserving voice and meaning. | Becomes an explicit edit rather than a mandatory global mode. |
 | `why` | Reconstruct design motivation from source history and shared records. | Searches available evidence categories and reports unavailable ones. |
 
-All 15 public skills are adapted rather than verbatim copies.
+All 12 public skills are adapted rather than verbatim copies.
 
 ## What ppstack leaves out
 
